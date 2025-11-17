@@ -40,14 +40,12 @@ function placedObstacle(){
   square(mousex, mousey, 25);
 }
 
-function ellipseObstacle(){
+function obstacle(){
   fill("red");
   strokeWeight(2);
   stroke("black");
   ellipse(ob1x,ob1y,25,50);
-}
-
-function rectObstacle(){
+  
   fill("blue");
   stroke("white");
   rect(ob2x,ob2y,50,100);
@@ -227,8 +225,7 @@ function draw() {
   background(123,28,38);
   border();
   placedObstacle();
-  ellipseObstacle();
-  rectObstacle();
+  obstacle();
   start();
   player();
   exit();
